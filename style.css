@@ -108,11 +108,12 @@ p {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
 }
 .nav__logo {
-  height: 1.25rem;
+  width: 8rem;
 }
 
 .community {
