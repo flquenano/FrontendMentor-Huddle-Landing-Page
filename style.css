@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  line-height: 1.75rem;
+}
+
+.mx-2 {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #ff52bf;
+  color: #f5faff;
+  box-shadow: 0 0.5px 5px #acaaaa;
+  transition: all 200ms;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.heading {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  color: #00252e;
+}
+
+.btn-outline {
+  border: 1px solid #ff52bf;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 2rem;
+  color: #ff52bf;
+  padding: 0.25rem 1rem;
+  font-size: 0.75rem;
+  transition: all 200ms;
+}
+.btn-outline:hover {
+  cursor: pointer;
+  background-color: #ff52bf;
+  color: #f5faff;
+}
+
+.root {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.nav {
+  position: relative;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  width: clamp(350px, 100%, 700px);
+}
+.nav__list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__logo {
+  height: 1.25rem;
+}
+
+.community {
+  margin-top: 5rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.community__image {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: clamp(200px, 100%, 550px);
+}
+.community__content {
+  text-align: center;
+  width: clamp(350px, 100%, 700px);
+}
+.community__heading, .community__text {
+  margin: 2rem 0;
+}
+
+.community-stats {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 3rem 0 5rem;
+  background: url("./images/bg-section-top-mobile-1.svg") bottom/100% no-repeat;
+}
+.community-stats__item {
+  position: relative;
+  margin: 2rem auto;
+}
+.community-stats__item .a {
+  font-size: 4rem;
+}
+.community-stats__item .b {
+  font-size: 3.4rem;
+}
+.community-stats__icon {
+  position: relative;
+  width: 2rem;
+}
+
+.grow-together {
+  background-color: #f5faff;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.grow-together__img {
+  width: min(90%, 700px);
+}
+.grow-together__content {
+  position: relative;
+  margin: 5rem auto 0;
+  width: clamp(200px, 100%, 700px);
+}
+.grow-together__heading, .grow-together__text {
+  margin: 1rem 0;
+}
+
+.conversations {
+  padding: 15rem 2rem;
+  text-align: center;
+  background: url("./images/bg-section-bottom-mobile-1.svg") top/100% no-repeat, url("./images/bg-section-top-mobile-2.svg") bottom/100% no-repeat;
+}
+.conversations__img {
+  width: min(90%, 700px);
+}
+.conversations__content {
+  position: relative;
+  margin: 5rem auto 0;
+  width: clamp(200px, 100%, 700px);
+}
+.conversations__heading, .conversations__text {
+  margin: 1rem 0;
+}
+
+.your-users {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #f5faff;
+}
+.your-users__img {
+  width: clamp(200px, 100%, 550px);
+}
+.your-users__content {
+  position: relative;
+  margin: 5rem auto 0;
+  width: clamp(200px, 100%, 700px);
+}
+.your-users__heading, .your-users__text {
+  margin: 1rem 0;
+}
+
+.cto {
+  padding: 15rem 2rem;
+  text-align: center;
+  background: url("./images/bg-section-bottom-mobile-2.svg") top/100% no-repeat, url("images/bg-footer-top-mobile.svg") bottom/100% no-repeat;
+}
+.cto__heading {
+  margin: 2rem 0;
+}
+
+.footer {
+  padding: 5rem 2rem 2rem;
+  background-color: #00252e;
+  color: #f5faff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__contact {
+  order: 2;
+  margin-top: 5rem;
+  width: clamp(200px, 100%, 700px);
+}
+.footer__contact .logo-text {
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+}
+.footer__contact .footer-logo {
+  width: 12rem;
+  margin: 1rem 0;
+}
+.footer__contact-info .contact_info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0;
+}
+.footer__contact-info .contact_info__text {
+  padding-left: 1rem;
+}
+.footer__contact-info .icon_contact {
+  height: 1.25rem;
+  width: 1.5rem;
+}
+.footer__contact-info .social-media {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer__contact-info .social-media i {
+  padding-right: 1rem;
+}
+.footer__news-letter {
+  order: 1;
+  width: clamp(200px, 100%, 700px);
+}
+.footer__news-letter .heading {
+  color: #f5faff !important;
+}
+.footer__news-letter .subscribe {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.footer__news-letter .subscribe .email-input {
+  width: 100%;
+  font-size: 1rem;
+  padding-left: 1rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+}
+.footer__news-letter .subscribe .email-btn {
+  margin: 1rem 0;
+  padding: 0.75rem 2rem;
+  background-color: #ff52bf;
+  color: #f5faff;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  align-self: flex-end;
+  transition: all 200ms;
+}
+.footer__news-letter .subscribe .email-btn:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+@media screen and (min-width: 560px) {
+  .footer__contact, .footer__news-letter {
+    position: relative;
+    margin: 0 auto 5rem;
+  }
+  .footer .subscribe {
+    flex-flow: row nowrap;
+  }
+  .footer .subscribe .email-input {
+    width: 70%;
+    margin-right: 2rem;
+  }
+  .footer .subscribe .email-btn {
+    text-align: center;
+    width: 8rem;
+    padding: 0.6rem 1rem;
+  }
+}
+@media screen and (min-width: 640px) {
+  .community-stats {
+    flex-flow: row nowrap;
+    padding-bottom: 15rem;
+  }
+  .community-stats .b {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .heading {
+    font-size: 3rem;
+  }
+
+  .btn {
+    padding: 1rem 3rem;
+  }
+
+  .nav {
+    width: 100%;
+    padding: 2% 10%;
+  }
+  .nav__logo {
+    height: 2rem;
+  }
+
+  .community__content {
+    width: 70%;
+  }
+  .community__image {
+    width: min(1000px, 60%);
+  }
+
+  .community-stats {
+    background: url("./images/bg-section-top-desktop-1.svg") bottom/100% no-repeat;
+  }
+
+  .grow-together {
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .grow-together__content {
+    text-align: start;
+    order: 1;
+    margin: 0 3rem;
+  }
+  .grow-together__img {
+    margin: 3%;
+    order: 2;
+  }
+
+  .conversations {
+    padding: 15rem 10%;
+    background: url("./images/bg-section-bottom-desktop-1.svg") top/100% no-repeat, url("./images/bg-section-top-desktop-2.svg") bottom/100% no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .conversations__content {
+    text-align: start;
+    margin: 0 3rem;
+  }
+  .conversations__img {
+    margin: 3%;
+  }
+
+  .your-users {
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .your-users__content {
+    text-align: start;
+    order: 1;
+    margin: 0 3rem;
+  }
+  .your-users__img {
+    margin: 3%;
+    order: 2;
+  }
+
+  .cto {
+    padding: 20rem;
+    background: url("./images/bg-section-bottom-desktop-2.svg") top/100% no-repeat, url("images/bg-footer-top-desktop.svg") bottom/100% no-repeat;
+  }
+
+  .footer {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .footer__contact {
+    order: 1;
+    width: 30%;
+  }
+  .footer__news-letter {
+    order: 2;
+    width: 30%;
+  }
+  .footer__news-letter .email-btn {
+    width: 3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
